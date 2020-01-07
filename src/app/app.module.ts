@@ -25,8 +25,8 @@ import { FundooAdminDashboardComponent } from './Components/fundoo-admin-dashboa
 import { FundooAdminLoginComponent } from './Components/fundoo-admin-login/fundoo-admin-login.component';
 import { FundooAdminTopNavigationBarComponent } from './Components/FundooAdminDashboardChildComponents/fundoo-admin-top-navigation-bar/fundoo-admin-top-navigation-bar.component';
 import { FundooAdminDashboardContentComponent } from './Components/FundooAdminDashboardChildComponents/fundoo-admin-dashboard-content/fundoo-admin-dashboard-content.component';
-import { jqxDataTableComponent } from 'jqwidgets-ng/jqxdatatable';
-import { FundooAdminDashboardJQxContentComponent } from './Components/FundooAdminDashboardChildComponents/fundoo-admin-dashboard-jqx-content/fundoo-admin-dashboard-jqx-content.component';
+
+
 import { FundooNoteEditFormComponent } from './Components/fundoo-note-edit-form/fundoo-note-edit-form.component';
 import { LabelPipePipe } from './custom-pipe-module/LabelPipe/label-pipe.pipe';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -72,8 +72,7 @@ export function provideConfig() {
     FundooAdminLoginComponent,
     FundooAdminTopNavigationBarComponent,
     FundooAdminDashboardContentComponent,
-    jqxDataTableComponent,
-    FundooAdminDashboardJQxContentComponent,
+
     FundooNoteEditFormComponent,
     LabelPipePipe,
     
