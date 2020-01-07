@@ -11,7 +11,7 @@
             cdkDrag>
             <span class='head'>{{note.title}}</span>
             <p class='content'>{{note.description}}</p>
-            <span class='pin' (click)="patchNoteUpdate(note,false,'PIN')">!</span>
+            <span class='pin' (click)="patchNoteUpdate(note,'false','PIN')">!</span>
             <span class='tick'>~</span>
             <ul class='tags' *ngIf="note.labels.length">
                 <li *ngFor="let label of note.labels">{{label}}</li>
@@ -41,7 +41,7 @@
                 </li>
                 <li>
                     <mat-icon aria-hidden="false" aria-label="Example home icon"
-                        (click)="patchNoteUpdate(note,true,'ARCHIVE')">
+                        (click)="patchNoteUpdate(note,'true','ARCHIVE')">
                         archive
                     </mat-icon>
                 </li>
@@ -55,9 +55,9 @@
 
 
 
-
+            <!--[cpOutputFormat]='hex' [cpPosition]='top'-->
             <span class='colorpicker' id='colorpick'>
-                <input [(colorPicker)]='note.color' [cpOutputFormat]='hex' [cpPosition]='top' [(ngModel)]="note.color"
+                <input [(colorPicker)]='note.color'   [(ngModel)]="note.color"
                     #colorInput />
             </span>
 
@@ -82,7 +82,7 @@
                 <span class='menu-icon'>:</span>
                 <ul class='menu'>
                     <li>Add</li>
-                    <li (click)="patchNoteUpdate(note,true,'TRASH')">Delete</li>
+                    <li (click)="patchNoteUpdate(note,'true','TRASH')">Delete</li>
                 </ul>
             </div>
 
@@ -106,7 +106,7 @@
             <span class='head'>{{note.title}}</span>
             <p class='content'>{{note.description}}
             </p>
-            <span class='pin' (click)="patchNoteUpdate(note,true,'PIN')">!</span>
+            <span class='pin' (click)="patchNoteUpdate(note,'true','PIN')">!</span>
             <span class='tick'>~</span>
             <ul class='tags' *ngIf="note.labels.length">
                 <li *ngFor="let label of note.labels">{{label}}</li>
@@ -129,7 +129,7 @@
                 </li>
                 <li>
                     <mat-icon aria-hidden="false" aria-label="Example home icon"
-                        (click)="patchNoteUpdate(note,true,'ARCHIVE')">archive</mat-icon>
+                        (click)="patchNoteUpdate(note,'true','ARCHIVE')">archive</mat-icon>
                 </li>
                 <li>
                     <mat-icon aria-hidden="false" aria-label="Example home icon">image</mat-icon>
@@ -148,7 +148,7 @@
                 </span>
                 <ul class='menu'>
                     <li>Add</li>
-                    <li (click)="patchNoteUpdate(note,true,'TRASH')">Delete</li>
+                    <li (click)="patchNoteUpdate(note,'true','TRASH')">Delete</li>
                 </ul>
             </div>
 
@@ -171,7 +171,7 @@
             <span class='head'>{{note.title}}</span>
             <p class='content'>{{note.description}}
             </p>
-            <span class='pin' (click)="patchNoteUpdate(note,true,'PIN')">!</span>
+            <span class='pin' (click)="patchNoteUpdate(note,'true','PIN')">!</span>
             <span class='tick'>~</span>
             <ul class='tags' *ngIf="note.labels.length">
                 <li *ngFor="let label of note.labels">{{label}}</li>
@@ -194,7 +194,7 @@
                 </li>
                 <li>
                     <mat-icon aria-hidden="false" aria-label="Example home icon"
-                        (click)="patchNoteUpdate(note,true,'ARCHIVE')">archive</mat-icon>
+                        (click)="patchNoteUpdate(note,'true','ARCHIVE')">archive</mat-icon>
                 </li>
                 <li>
                     <mat-icon aria-hidden="false" aria-label="Example home icon">image</mat-icon>
@@ -213,7 +213,7 @@
                 </span>
                 <ul class='menu'>
                     <li>Add</li>
-                    <li (click)="patchNoteUpdate(note,true,'TRASH')">Delete</li>
+                    <li (click)="patchNoteUpdate(note,'true','TRASH')">Delete</li>
                 </ul>
             </div>
 
@@ -230,7 +230,7 @@
             <span class='head'>{{note.title}}</span>
             <p class='content'>{{note.description}}
             </p>
-            <span class='pin' (click)="patchNoteUpdate(note,true,'PIN')">!</span>
+            <span class='pin' (click)="patchNoteUpdate(note,'true','PIN')">!</span>
             <span class='tick'>~</span>
             <ul class='tags' *ngIf="note.labels.length">
                 <li *ngFor="let label of note.labels">{{label}}</li>
@@ -253,7 +253,7 @@
                 </li>
                 <li>
                     <mat-icon aria-hidden="false" aria-label="Example home icon"
-                        (click)="patchNoteUpdate(note,false,'ARCHIVE')">
+                        (click)="patchNoteUpdate(note,'false','ARCHIVE')">
                         archive
                     </mat-icon>
                 </li>
@@ -280,7 +280,7 @@
             <span class='head'>{{note.title}}</span>
             <p class='content'>{{note.description}}
             </p>
-            <span class='pin' (click)="patchNoteUpdate(note,false,'PIN')">!</span>
+            <span class='pin' (click)="patchNoteUpdate(note,'false','PIN')">!</span>
             <span class='tick'>~</span>
             <ul class='tags' *ngIf="note.labels.length">
                 <li *ngFor="let label of note.labels">{{label}}</li>
@@ -336,7 +336,7 @@
         <div class='note' [style.backgroundColor]="bgColor" cdkDrag>
             <span class='head'>{{note.title}}</span>
             <p class='content'>{{note.description}}</p>
-            <span class='pin' (click)="patchNoteUpdate(note,false,'PIN')">!</span>
+            <span class='pin' (click)="patchNoteUpdate(note,'false','PIN')">!</span>
             <span class='tick'>~</span>
             <ul class='tags' *ngIf="note.labels.length">
                 <li *ngFor="let label of note.labels">{{label}}</li>
@@ -361,7 +361,7 @@
                 </li>
                 <li>
                     <mat-icon aria-hidden="false" aria-label="Example home icon"
-                        (click)="patchNoteUpdate(note,true,'ARCHIVE')">
+                        (click)="patchNoteUpdate(note,'true','ARCHIVE')">
                         archive
                     </mat-icon>
                 </li>
@@ -373,7 +373,7 @@
                 <span class='menu-icon'>:</span>
                 <ul class='menu'>
                     <li>Add</li>
-                    <li (click)="patchNoteUpdate(note,true,'TRASH')">Delete</li>
+                    <li (click)="patchNoteUpdate(note,'true','TRASH')">Delete</li>
                 </ul>
             </div>
         </div>
