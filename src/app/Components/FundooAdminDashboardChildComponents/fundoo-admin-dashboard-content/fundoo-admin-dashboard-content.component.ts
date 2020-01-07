@@ -15,24 +15,24 @@ export class FundooAdminDashboardContentComponent implements OnInit {
   isUserDetails: boolean;
 
 
-    source: any =
-    {
-      localdata: this.userdetails,
-      datatype: "array",
-      datafields:
-        [
-          { name: 'username', type: 'string' },
-          { name: 'useremail', type: 'string' },
-          { name: 'service', type: 'string' },
-          { name: 'notes', type: 'number' },
-          { name: 'status', type: 'string' },
+   // source: any =
+    //{
+      //localdata: this.userdetails,
+      //datatype: "array",
+      //datafields:
+       // [
+         // { name: 'username', type: 'string' },
+         // { name: 'useremail', type: 'string' },
+         // { name: 'service', type: 'string' },
+         // { name: 'notes', type: 'number' },
+         // { name: 'status', type: 'string' },
           
-        ],
-      sortcolumn: 'username',
-      sortdirection: 'asc'
-    };
+       // ],
+      // sortcolumn: 'username',
+      // sortdirection: 'asc'
+    // };
 
-    dataAdapter: any = new jqx.dataAdapter(this.source);
+    //dataAdapter: any = new jqx.dataAdapter(this.source);
 
 
   ngOnInit() {
