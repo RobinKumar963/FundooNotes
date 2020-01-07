@@ -36,4 +36,8 @@ export class FundooAdminLoginComponent implements OnInit {
   onSubmit() {
 
   }
+
+  FORGOT(){
+    
+  }
 }

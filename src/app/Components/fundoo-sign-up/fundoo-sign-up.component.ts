@@ -26,4 +26,7 @@ export class FundooSignUpComponent implements OnInit {
     });
   }
 
+  SocialSignUp(){
+    
+  }
 }

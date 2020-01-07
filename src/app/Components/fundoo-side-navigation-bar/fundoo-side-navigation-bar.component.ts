@@ -105,6 +105,12 @@ export class FundooSideNavigationBarComponent implements OnInit {
     this.messageEvent.emit(this.contentStatus);
   }
 
+  deleteLabel(){
 
+  }
+
+  editLabel(){
+    
+  }
 
 }
