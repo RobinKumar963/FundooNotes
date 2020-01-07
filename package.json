@@ -29,6 +29,7 @@
     "angular-color-picker": "^1.0.11",
     "angularx-social-login": "^2.2.1",
     "bootstrap": "^4.4.1",
+    "content-security-policy": "^0.3.3",
     "express": "^4.17.1",
     "hammerjs": "^2.0.8",
     "jqwidgets-ng": "^8.3.3",
