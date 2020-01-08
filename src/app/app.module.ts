@@ -75,6 +75,7 @@ export function provideConfig() {
 
     FundooNoteEditFormComponent,
     LabelPipePipe,
+  
     
    
     
