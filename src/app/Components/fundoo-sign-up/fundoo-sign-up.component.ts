@@ -10,7 +10,7 @@ import { UserAccountService } from 'src/app/Services/UserAccount/user-account.se
 export class FundooSignUpComponent implements OnInit {
 
   constructor(private service: UserAccountService) { }
-  userSignUPModel = new SignUp('u', 'tobeassignedbybackend', 'u', 'u', 'u', 'tobeassignedlater', 'inactive');
+  userSignUPModel = new SignUp('', 'tobeassignedbybackend', '', '', '', 'tobeassignedlater', 'inactive');
 
 
   get diagnostic() { return JSON.stringify(this.userSignUPModel); }

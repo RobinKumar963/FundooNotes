@@ -12,7 +12,7 @@ export class FundooAdminLoginComponent implements OnInit {
 
   constructor(private service:AdminAccountService,private router: Router) { }
   
-  adminLoginModel = new AdminLogin('u','u');
+  adminLoginModel = new AdminLogin('','');
   ngOnInit() {
   }
   

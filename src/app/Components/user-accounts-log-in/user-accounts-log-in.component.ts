@@ -17,7 +17,7 @@ export class UserAccountsLogInComponent implements OnInit {
   constructor(private dataExchange: DataExchangeService, private service: UserAccountService, private router: Router, private authService: AuthService) { }
 
 
-  userLoginModel = new LoginModel('u','u');
+  userLoginModel = new LoginModel('','');
   private user: SocialUser;
   private loggedIn: boolean;
 
