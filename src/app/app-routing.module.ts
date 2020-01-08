@@ -34,6 +34,9 @@ const routes: Routes = [
   },
   {
     path:'FundooAdminDashBoard',component:FundooAdminDashboardComponent
+  },
+  { 
+    path: '', redirectTo: '/Home', pathMatch: 'full' 
   }
   
 ];
